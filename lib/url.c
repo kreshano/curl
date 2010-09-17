@@ -4308,7 +4308,7 @@ static CURLcode parse_remote_port(struct SessionHandle *data,
       conn->remote_port = curlx_ultous(port);
     }
     else if( !port )/*cutoff the port part from url if the port number not given*/
-	*portptr = '\0;
+	*portptr = '\0';
   }
   return CURLE_OK;
 }
